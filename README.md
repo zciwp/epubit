@@ -1,5 +1,9 @@
 # epubit 项目进度
 
+2015.08.13
+修改了图书列表的lst-grid形式时，图书名称短造成图书对不齐的问题。
+把page.css和added-style.css合并进style.css页面中可以删除page.css和added-style.css引用。
+
 2015.08.04
 首页近期活动修改，和文章列表侧边栏结构一致
 文章列表侧边栏摘要只显示3行内容，文章侧边栏显示图片
