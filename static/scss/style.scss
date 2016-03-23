@@ -381,8 +381,9 @@ a{
 
 }
 @media (min-width: 768px) and (max-width: 992px){
-	.navbar-inverse .navbar-nav > li > a{ padding: 0 8px;}
+	.navbar-inverse .navbar-nav > li > a{ padding: 0 5px;}
 	.search-box .txt{ width:72px;}
+	.navbar-inverse .navbar-nav > li > a.write{ padding: 0 15px;}
 }
 
 .glyphicon-pencil{ margin-right: 5px;}
@@ -1187,7 +1188,7 @@ footer{
 			height: 20px;
 		}
 		.author{
-			padding: 0 10px;
+			padding: 0 0 0 10px;
 		}
 		.r-panel{
 			.i{
@@ -1477,6 +1478,22 @@ footer{
 			}
 		}
 	}
+	.author-ico-box{
+		position: static;
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		vertical-align: middle;
+		.author-ico{
+			position: static;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			width: 20px;
+			height: 20px;
+			background: url(../images/author-ico-s.png) no-repeat;
+		}
+	}
 }
 
 .col-md-3{
@@ -1568,6 +1585,15 @@ footer{
 					word-break: normal;
 					word-wrap: normal;
 				}
+			}
+		}
+		.author-ico-box{
+			.author-ico{
+				width: 20px;
+				height: 20px;
+				top: -10px;
+				right: 0px;
+				background-image: url(../images/author-ico-s.png);
 			}
 		}
 	}
@@ -3330,6 +3356,17 @@ padding-bottom: 20px;}
 	
 }
 
+@media (min-width: 992px){
+	.user-box{
+		.lst-side{
+			.col-md-12{
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}
+}
+
 @media (max-width: 991px){
 	.bookdetail-page .bookdetail-panel .bookDeFd .btn-box{
 		padding-top: 10px;
@@ -3542,3 +3579,23 @@ body{
 		color: #fff;
 	}
 }
+
+// 作者icon
+.dis-ib{
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+.author-ico-box{
+	position: relative;
+	.author-ico{
+		position: absolute;
+		display: block;
+		width: 30px;
+		height: 30px;
+		top: -25px;
+		right: -5px;
+		background: url(../images/author-ico.png) no-repeat;
+	}
+}
+

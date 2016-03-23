@@ -470,10 +470,13 @@ a {
           display: block; } }
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-inverse .navbar-nav > li > a {
-    padding: 0 8px; }
+    padding: 0 5px; }
 
   .search-box .txt {
-    width: 72px; } }
+    width: 72px; }
+
+  .navbar-inverse .navbar-nav > li > a.write {
+    padding: 0 15px; } }
 .glyphicon-pencil {
   margin-right: 5px; }
 
@@ -1056,7 +1059,7 @@ footer {
       width: 20px;
       height: 20px; }
     .article .article-fd .author {
-      padding: 0 10px; }
+      padding: 0 0 0 10px; }
     .article .article-fd .r-panel .i {
       padding-left: 10px; }
   .article .hot, .article .recom {
@@ -1257,6 +1260,20 @@ footer {
     .article-box .lst-side .media .media-left .media-object {
       width: 110px;
       max-width: none; }
+.article-box .author-ico-box {
+  position: static;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle; }
+  .article-box .author-ico-box .author-ico {
+    position: static;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 20px;
+    height: 20px;
+    background: url(../images/author-ico-s.png) no-repeat; }
 
 .col-md-3 .article-box .media .media-left .media-object {
   width: 100px; }
@@ -1318,6 +1335,12 @@ footer {
     text-overflow: ellipsis;
     word-break: normal;
     word-wrap: normal; }
+.user-box .lst-side .author-ico-box .author-ico {
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  right: 0px;
+  background-image: url(../images/author-ico-s.png); }
 
 @media (max-width: 768px) {
   .container .lst-grid .col-md-12 {
@@ -2534,6 +2557,10 @@ a.input-group-addon:hover {
 @media (max-width: 1200px) {
   .bookdetail-page .bookdetail-panel .bookDeFd .btn {
     margin-left: 10px; } }
+@media (min-width: 992px) {
+  .user-box .lst-side .col-md-12 {
+    padding-left: 5px;
+    padding-right: 5px; } }
 @media (max-width: 991px) {
   .bookdetail-page .bookdetail-panel .bookDeFd .btn-box {
     padding-top: 10px; }
@@ -2724,5 +2751,21 @@ body {
   .go-top .glyphicon, .go-bottom .glyphicon {
     font-size: 18px;
     color: #fff; }
+
+.dis-ib {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+.author-ico-box {
+  position: relative; }
+  .author-ico-box .author-ico {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: -25px;
+    right: -5px;
+    background: url(../images/author-ico.png) no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
